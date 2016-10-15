@@ -1,0 +1,21 @@
+
+
+/*
+ * NAVBAR CUSTOMIZATION CSS
+ */
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+}
+
+@import 'logo';
+@import 'mediaLarge';
+@import 'mediaSmall';
+
