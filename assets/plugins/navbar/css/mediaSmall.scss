@@ -2,6 +2,17 @@
  * CUSTOMIZATION VARIABLES
  */
 
+/* FONT SETTINGS */
+$first-level-font-name: 'Francois One', sans-serif;
+$first-level-font-size: 12px;
+$first-level-font-weight: 700;
+$first-level-font-letter-spacing: 1px;
+
+$submenu-level-font-name: 'Exo', sans-serif;
+$submenu-level-font-size: 12px;
+$submenu-level-font-weight: 400;
+$submenu-level-font-letter-spacing: 1px;
+
 /* SANDWITCH BAR */
 $sandwitch-bar-color: black;
 
@@ -253,6 +264,14 @@ $has-submenu-symbol-color: grey;
 
 @media screen and (max-width: 700px) {
 
+	/*
+	 * MENU FONT CUSTOMIZATION CSS
+	 */
+	.navbar {
+		font-family: $submenu-level-font-name;
+	}
+
+
 	/*****************************************************************
 	 * NAVIGATION BAR
 	 *****************************************************************/
@@ -304,6 +323,9 @@ $has-submenu-symbol-color: grey;
 	}
 
 	.navbar > ul > li > a {
+		/* font settings */
+		font-family: $first-level-font-name;
+
 		background: $first-level-non-active-background-color;
 		color: $first-level-non-active-foreground-color;
 	}
@@ -333,6 +355,15 @@ $has-submenu-symbol-color: grey;
 	/*****************************************************************
 	 * SUBMENU LEVEL MENU
 	 *****************************************************************/
+
+	/* submenu level menu customization in non-active time */
+	.navbar ul ul li a {
+		font-size: $submenu-level-font-size;
+		font-weight: $submenu-level-font-weight;
+		letter-spacing: $submenu-level-font-letter-spacing;
+		text-decoration: none;
+	}
+
 
 	/* background color for the second level menu in non-active time */
     .navbar ul ul li {

@@ -26,6 +26,8 @@ nav {
 /*
  * CUSTOMIZATION VARIABLES
  */
+/* FONT SETTINGS */
+/* NAVBAR */
 /* FIRST LEVEL MENU */
 /* SECOND LEVEL MENU */
 /* HAS SUBMENU SYMBOL */
@@ -205,7 +207,7 @@ nav {
  * MENU FONT CUSTOMIZATION CSS
  */
 .navbar {
-  font-family: sans-serif; }
+  font-family: "Shadows Into Light", cursive; }
 
 /*
  * MENU COLOR CUSTOMIZATION CSS
@@ -227,13 +229,10 @@ header {
   /* foreground color */
   color: blue;
   /* font settings */
+  font-family: "Bungee Inline", cursive;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1px;
-  text-decoration: none; }
-
-.navbar ul ul li a {
-  font-weight: 400;
   text-decoration: none; }
 
 /* color setting of the hover item for the first level menu */
@@ -265,6 +264,13 @@ header {
 /*****************************************************************
  * SUBMENU LEVEL MENU
  *****************************************************************/
+/* submenu level menu customization in non-active time */
+.navbar ul ul li a {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-decoration: none; }
+
 /* foreground color settings for the sub menu in non-active time */
 .navbar ul ul li a {
   /* foreground color */
@@ -299,6 +305,7 @@ header {
 /*
  * CUSTOMIZATION VARIABLES
  */
+/* FONT SETTINGS */
 /* SANDWITCH BAR */
 /* FIRST LEVEL MENU */
 /* SECOND LEVEL MENU */
@@ -462,6 +469,11 @@ header {
     white-space: normal; } }
 
 @media screen and (max-width: 700px) {
+  /*
+	 * MENU FONT CUSTOMIZATION CSS
+	 */
+  .navbar {
+    font-family: "Exo", sans-serif; }
   /*****************************************************************
 	 * NAVIGATION BAR
 	 *****************************************************************/
@@ -498,6 +510,8 @@ header {
   .navbar ul li:last-child {
     border-bottom: 0px !important; }
   .navbar > ul > li > a {
+    /* font settings */
+    font-family: "Francois One", sans-serif;
     background: black;
     color: white; }
   /* first level menu active background color */
@@ -519,6 +533,12 @@ header {
   /*****************************************************************
 	 * SUBMENU LEVEL MENU
 	 *****************************************************************/
+  /* submenu level menu customization in non-active time */
+  .navbar ul ul li a {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none; }
   /* background color for the second level menu in non-active time */
   .navbar ul ul li {
     background: chocolate; }

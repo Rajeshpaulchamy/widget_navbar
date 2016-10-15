@@ -1,6 +1,20 @@
 /*
  * CUSTOMIZATION VARIABLES
  */
+
+/* FONT SETTINGS */
+$first-level-font-name: 'Bungee Inline', cursive;
+$first-level-font-size: 12px;
+$first-level-font-weight: 700;
+$first-level-font-letter-spacing: 1px;
+
+$submenu-level-font-name: 'Shadows Into Light', cursive;
+$submenu-level-font-size: 12px;
+$submenu-level-font-weight: 400;
+$submenu-level-font-letter-spacing: 1px;
+
+
+/* NAVBAR */
 $navbar-background: white;
 
 /* FIRST LEVEL MENU */
@@ -234,7 +248,7 @@ $has-submenu-symbol-color: brown;
  */
 
 .navbar {
-	font-family: sans-serif;
+	font-family: $submenu-level-font-name;
 }
 
 /*
@@ -262,14 +276,10 @@ header {
 
 
 	/* font settings */
-	font-size: 12px;
-	font-weight: 700;
-	letter-spacing: 1px;
-	text-decoration: none;
-}
-
-.navbar ul ul li a {
-	font-weight: 400;
+	font-family: $first-level-font-name;
+	font-size: $first-level-font-size;
+	font-weight: $first-level-font-weight;
+	letter-spacing: $first-level-font-letter-spacing;
 	text-decoration: none;
 }
 
@@ -305,6 +315,15 @@ header {
 /*****************************************************************
  * SUBMENU LEVEL MENU
  *****************************************************************/
+
+/* submenu level menu customization in non-active time */
+.navbar ul ul li a {
+	font-size: $submenu-level-font-size;
+	font-weight: $submenu-level-font-weight;
+	letter-spacing: $submenu-level-font-letter-spacing;
+	text-decoration: none;
+}
+
 
 /* foreground color settings for the sub menu in non-active time */
 .navbar ul ul li a {
