@@ -293,7 +293,7 @@ header {
 }
 
 /* color setting of the active item for the first level menu */
-.navbar ul li.active a {
+.navbar > ul > li.active > a {
 	/* background color */
 	background: $first-level-active-background-color;
 	/* foreground color */
